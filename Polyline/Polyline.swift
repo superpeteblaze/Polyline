@@ -266,7 +266,10 @@ private func encodeFiveBitComponents(_ value: Int) -> String {
         
         fiveBitComponent += 63
         
-        returnString.append(UnicodeScalar(fiveBitComponent))
+        if let fiveBitUnicode = UnicodeScalar(fiveBitComponent) {
+            returnString.append(String(fiveBitUnicode))
+        }
+        
         remainingComponents = remainingComponents >> 5
     } while (remainingComponents != 0)
     
