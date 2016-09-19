@@ -368,9 +368,12 @@
 				TargetAttributes = {
 					207F63FD19B5DF7E005261FA = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					207F640819B5DF7E005261FA = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					91F7832B1CE4EB7E004E87E3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -644,6 +647,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -662,12 +666,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		207F641519B5DF7E005261FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -680,12 +687,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramoapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		207F641619B5DF7E005261FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -694,6 +704,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramoapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -717,6 +728,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -741,6 +753,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -757,6 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramoapps.PolylineTests;
 				PRODUCT_NAME = PolylineTests;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -774,6 +788,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramoapps.PolylineTests;
 				PRODUCT_NAME = PolylineTests;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -794,6 +809,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -817,6 +833,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -833,6 +850,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramoapps.PolylineTests;
 				PRODUCT_NAME = PolylineTests;
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -849,6 +867,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramoapps.PolylineTests;
 				PRODUCT_NAME = PolylineTests;
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -871,6 +890,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -895,6 +915,7 @@
 				PRODUCT_NAME = Polyline;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -955,6 +976,7 @@
 				DA1A10831D003E88009F82FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1A10871D003E88009F82FA /* Build configuration list for PBXNativeTarget "PolylineTVTests" */ = {
 			isa = XCConfigurationList;
@@ -963,6 +985,7 @@
 				DA1A10851D003E88009F82FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1A10961D00400D009F82FA /* Build configuration list for PBXNativeTarget "PolylineWatch" */ = {
 			isa = XCConfigurationList;
@@ -971,6 +994,7 @@
 				DA1A10981D00400D009F82FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
